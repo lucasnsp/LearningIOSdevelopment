@@ -40,3 +40,49 @@ default:
     print("Everything tastes good in a soup")
 }
 
+let interesentingNumbers = [
+    "Prime": [2, 3, 5, 11, 13],
+    "Fibtonacci": [1, 1, 2, 3, 5, 8],
+    "Square": [1, 4, 9, 16, 25]
+]
+var largest = 0
+var key = ""
+for (_key, numbers) in interesentingNumbers {
+    for number in numbers {
+        if number > largest {
+            largest = number
+            key = _key
+        }
+    }
+}
+
+print(largest)
+print(key)
+
+var n = 2
+while n < 100 {
+    n *= 2
+}
+
+print(n)
+
+
+var m = 2
+repeat {
+    m *= 2
+} while m < 100
+print (m)
+
+var total = 0
+for i in 0..<4 {
+    total += i
+}
+print(total)
+
+var newTotal = 0
+for i in 0...4 {
+    newTotal += i
+}
+
+print(newTotal)
+
